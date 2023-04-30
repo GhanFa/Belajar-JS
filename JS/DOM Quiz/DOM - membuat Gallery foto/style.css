@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+body {
+  text-align: center;
+  background-color: gainsboro;
+}
+
+.container {
+  width: 600px;
+  margin: 20px auto;
+  border: 5px solid white;
+  overflow: auto;
+}
+
+.thumb {
+  width: 200px;
+  float: left;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+
+.thumb:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.active {
+  opacity: 0.5;
+}
+
+.effect {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
